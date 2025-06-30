@@ -70,11 +70,23 @@ body{
 /*media headder*/
 
 @media screen and (max-width:1023px) {
-    .nav{
+    .nav,
+    .auth{
         display: none;
     }
     .menu{
         display: block;
         order: 1;
     }
+}
+
+@media screen and (max-width:576px) {
+   .container{
+    width: calc(100% - 50px);
+    
+   }
+
+   .header .logo img{
+    width: 20px;
+   }
 }
